@@ -1,51 +1,32 @@
 package com.zipcodewilmington.singlylinkedlist;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+class SinglyLinkedListTest {
 
-/**
- * Created by leon on 1/10/18.
- */
-public class SinglyLinkedListTest {
+//    @Test
+//    void getHeadNode() {
+//        SinglyLinkedList testList = new SinglyLinkedList("Monopoly");
+//        System.out.println(testList.getHeadNode().data);
+//    }
 
     @Test
-    void add() {
+    void setNextNode() {
+        SinglyLinkedList testList = new SinglyLinkedList("Monopoly");
+        testList.add("Ludo");
+        SinglyLinkedList.Node currentNode = testList.headNode;
+
+        do {System.out.println(currentNode.data);
+            currentNode =  currentNode.getNextNode();
+            System.out.println(currentNode.data);
+        } while(currentNode.getNextNode() != null);
+
     }
 
     @Test
-    void remove() {
+    void getTail() {
     }
 
     @Test
-    void contains() {
+    void setTail() {
     }
-
-    @Test
-    void find() {
-    }
-
-    @Test
-    void size() {
-    }
-
-    @Test
-    void get() {
-    }
-
-    @Test
-    void copy() {
-    }
-
-    @Test
-    void sort() {
-    }
-
-    @Test
-    void getSize() {
-    }
-
-    @Test
-    void getHeadNode() {
-    }
-
-
 }
