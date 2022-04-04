@@ -183,7 +183,7 @@
       <recent name="com.zipcodewilmington.singlylinkedlist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.setNextNode">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -272,6 +272,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="removeTestDoesNothingWhenIndexIsAbsent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.removeTestWhenIndexIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="removeTestWhenIndexIsPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SinglyLinkedListTest.setNextNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
@@ -336,11 +370,15 @@
       <item itemvalue="JUnit.SinglyLinkedListTest.getHeadNode" />
       <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
       <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
         <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
         <item itemvalue="JUnit.SinglyLinkedListTest.getHeadNode" />
       </list>
     </recent_temporary>
@@ -358,7 +396,7 @@
       <workItem from="1648930042072" duration="5429000" />
       <workItem from="1648936957663" duration="4124000" />
       <workItem from="1648946159901" duration="5760000" />
-      <workItem from="1649042597378" duration="1563000" />
+      <workItem from="1649042597378" duration="3099000" />
     </task>
     <servers />
   </component>
@@ -413,12 +451,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java</url>
-          <line>31</line>
-          <properties class="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest">
+          <line>53</line>
+          <properties class="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" method="removeTestWhenIndexIsPresent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
