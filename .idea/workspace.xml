@@ -183,7 +183,7 @@
       <recent name="com.zipcodewilmington.singlylinkedlist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -238,23 +238,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.getHeadNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="singlylinkedlist" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
-      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="getHeadNode" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SinglyLinkedListTest.removeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
@@ -300,6 +283,23 @@
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
       <option name="METHOD_NAME" value="removeTestWhenIndexIsPresent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="removeTestWhenIndexIsPresentBound2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -367,19 +367,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.getHeadNode" />
       <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
       <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
       <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
       <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" />
         <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
         <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
         <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.getHeadNode" />
       </list>
     </recent_temporary>
   </component>
