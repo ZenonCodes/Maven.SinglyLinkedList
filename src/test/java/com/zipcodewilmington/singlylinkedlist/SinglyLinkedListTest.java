@@ -14,42 +14,45 @@ class SinglyLinkedListTest {
 
     @Test
     void setNextNode() {
-        SinglyLinkedList testList = new SinglyLinkedList("Monopoly");
+        SinglyLinkedList testList = new SinglyLinkedList();
         testList.add("Ludo");
-        SinglyLinkedList.Node currentNode = testList.headNode;
+        testList.add("Ludo");
+        testList.add("Ludo");
+
+        SinglyLinkedList.Node currentNode = testList.head.getNext();
 
         do {System.out.println(currentNode.data);
-            currentNode =  currentNode.getNextNode();
+            currentNode =  currentNode.getNext();
             System.out.println(currentNode.data);
-        } while(currentNode.getNextNode() != null);
+        } while(currentNode.getNext() != null);
 
     }
 
-    @Test
-    void removeTest() {
-        SinglyLinkedList testList = new SinglyLinkedList("Monopoly");
-        testList.add("Ludo");
-        testList.remove(1);
-
-        SinglyLinkedList.Node expected = testList.headNode;
-        SinglyLinkedList.Node actual = testList.tail;
-
-       assertEquals(expected, actual);
-
-
-
-
-        SinglyLinkedList.Node currentNode = testList.headNode;
-
-
+//    @Test
+//    void removeTest() {
+//        SinglyLinkedList testList = new SinglyLinkedList();
+//        testList.add("Ludo");
+//        testList.remove(1);
+//
+//        SinglyLinkedList.Node expected = testList.head;
+//        SinglyLinkedList.Node actual = testList.tail;
+//
+//       assertEquals(expected, actual);
+//
+//
+//
+//
+//        SinglyLinkedList.Node currentNode = testList.head;
+//
+//
 
 
 //        do {System.out.println(currentNode.data);
-//            currentNode =  currentNode.getNextNode();
+//            currentNode =  currentNode.getNext();
 //            System.out.println(currentNode.data);
-//        } while(currentNode.getNextNode() != null);
+//        } while(currentNode.getNext() != null);
 
-    }
+//    }
 
 
 

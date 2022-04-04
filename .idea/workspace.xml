@@ -183,7 +183,7 @@
       <recent name="com.zipcodewilmington.singlylinkedlist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.removeTest">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.setNextNode">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -339,8 +339,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.setNextNode" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.removeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.getHeadNode" />
       </list>
     </recent_temporary>
@@ -358,6 +358,7 @@
       <workItem from="1648930042072" duration="5429000" />
       <workItem from="1648936957663" duration="4124000" />
       <workItem from="1648946159901" duration="5760000" />
+      <workItem from="1649042597378" duration="1563000" />
     </task>
     <servers />
   </component>
@@ -412,8 +413,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java</url>
-          <line>28</line>
-          <properties class="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" method="removeTest">
+          <line>31</line>
+          <properties class="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
