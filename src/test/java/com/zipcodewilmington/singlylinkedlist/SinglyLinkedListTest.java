@@ -1,19 +1,20 @@
 package com.zipcodewilmington.singlylinkedlist;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SinglyLinkedListTest {
+    public void printLinkedListHelper(SinglyLinkedList.Node currentNode) {
 
-//    @Test
-//    void getHeadNode() {
-//        SinglyLinkedList testList = new SinglyLinkedList("Monopoly");
-//        System.out.println(testList.getHeadNode().data);
-//    }
-
+        do {
+            currentNode = currentNode.getNext();
+            System.out.println(currentNode.data);
+        } while (currentNode.getNext() != null);
+    }
     @Test
-    void setNextNode() {
+    void setNextNodeTest() {
         SinglyLinkedList testList = new SinglyLinkedList();
         testList.add("Ludo");
         testList.add("Ludo");
@@ -21,10 +22,8 @@ class SinglyLinkedListTest {
 
         SinglyLinkedList.Node currentNode = testList.head.getNext();
 
-        do {System.out.println(currentNode.data);
-            currentNode =  currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
+        printLinkedListHelper (testList.head);
+
 
     }
 
@@ -39,14 +38,7 @@ class SinglyLinkedListTest {
 
        assertEquals(expected, actual);
 
-
-
-
-        SinglyLinkedList.Node currentNode = testList.head;
-
-        do {currentNode = currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
+       printLinkedListHelper (testList.head);
 
     }
 
@@ -64,14 +56,7 @@ class SinglyLinkedListTest {
 
         assertNotEquals(expected, actual);
 
-
-
-
-        SinglyLinkedList.Node currentNode = testList.head;
-
-        do {currentNode = currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
+        printLinkedListHelper (testList.head);
 
     }
 
@@ -113,14 +98,7 @@ class SinglyLinkedListTest {
 
         assertFalse(actual);
 
-
-
-
-        SinglyLinkedList.Node currentNode = testList.head;
-
-        do {currentNode = currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
+        printLinkedListHelper (testList.head);
 
     }
 
@@ -138,13 +116,24 @@ class SinglyLinkedListTest {
 
         assertTrue(actual);
 
+        printLinkedListHelper (testList.head);
 
-        SinglyLinkedList.Node currentNode = testList.head;
-
-        do {
-            currentNode = currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while (currentNode.getNext() != null);
     }
+
+    @Test
+    void setNextNodeTest() {
+        SinglyLinkedList testList = new SinglyLinkedList();
+        testList.add("Ludo");
+        testList.add("Ludo");
+        testList.add("Ludo");
+
+        SinglyLinkedList.Node currentNode = testList.head.getNext();
+
+        printLinkedListHelper (testList.head);
+
+
+    }
+
+
 
 }
