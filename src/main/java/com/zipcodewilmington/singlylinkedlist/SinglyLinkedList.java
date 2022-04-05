@@ -48,12 +48,14 @@ public class SinglyLinkedList<T> {
 
     public int find(SinglyLinkedList searchMe, T element) {
         SinglyLinkedList.Node currentNode = searchMe.head;
+        if (searchMe.tail.data.equals(element)) return (size-1);
         int index = 0;
         do {
             currentNode = currentNode.getNext();
             if(currentNode.data.equals(element)) return index;
+            index++;
         } while(currentNode.getNext() != null);
-        if (currentNode.data.equals(element)) return (++index);
+
 
         return -1;
     }

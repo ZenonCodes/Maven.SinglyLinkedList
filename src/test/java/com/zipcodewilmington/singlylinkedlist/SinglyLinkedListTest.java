@@ -122,11 +122,14 @@ class SinglyLinkedListTest {
         testList.add("Piper");
         testList.add("Pickle");
 
-        int actual = testList.find(testList,"Piper");
-        int expected = 0;
+        System.out.println(testList.find(testList,"Peter"));
+        System.out.println(testList.find(testList,"Piper"));
+        System.out.println(testList.find(testList,"Pickle"));
+
+        int actual = testList.find(testList,"Pickle");
+        int expected = 2;
 
         assertEquals(actual, expected);
-
         printLinkedListHelper (testList.head);
 
 

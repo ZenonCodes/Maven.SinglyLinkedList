@@ -183,7 +183,7 @@
       <recent name="com.zipcodewilmington.singlylinkedlist" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfFoundTest">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -374,8 +374,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfFoundTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfNotFoundTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.setNextNodeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.containsTestWhenElementIsNotPresent" />
