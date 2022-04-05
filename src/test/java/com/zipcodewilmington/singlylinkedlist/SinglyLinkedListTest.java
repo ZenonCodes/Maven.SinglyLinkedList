@@ -2,8 +2,7 @@ package com.zipcodewilmington.singlylinkedlist;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class SinglyLinkedListTest {
 
@@ -102,7 +101,32 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void removeTestWhenIndexIsPresentBound2() {
+    void containsTestWhenElementIsNotPresent () {
+        SinglyLinkedList testList = new SinglyLinkedList();
+        testList.add("Ludo");
+        testList.add("Monopoly Index 1");
+        testList.add("Mancala Index 2");
+        testList.add("Uno Index 3");
+
+        boolean actual = testList.contains("Ludo");
+
+
+        assertFalse(actual);
+
+
+
+
+        SinglyLinkedList.Node currentNode = testList.head;
+
+        do {currentNode = currentNode.getNext();
+            System.out.println(currentNode.data);
+        } while(currentNode.getNext() != null);
+
+    }
+
+
+    @Test
+    void containsTestWhenElementIsPresent() {
         SinglyLinkedList testList = new SinglyLinkedList();
         testList.add("Ludo Index 0");
         testList.add("Monopoly Index 1");
@@ -125,7 +149,5 @@ class SinglyLinkedListTest {
         } while(currentNode.getNext() != null);
 
     }
-
-
 
 }

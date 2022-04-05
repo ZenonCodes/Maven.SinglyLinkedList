@@ -35,6 +35,15 @@ public class SinglyLinkedList<T> {
         size--;
     }
 
+    public boolean contains(SinglyLinkedList searchMe,String element) {
+        SinglyLinkedList.Node currentNode = searchMe.head;
+
+        do {currentNode = currentNode.getNext();
+            System.out.println(currentNode.data);
+        } while(currentNode.getNext() != null);
+
+    }
+
     public static class Node<T> {
         public T data;
 //        private Node prev;
