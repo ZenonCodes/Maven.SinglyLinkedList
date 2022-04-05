@@ -103,12 +103,12 @@ class SinglyLinkedListTest {
     @Test
     void containsTestWhenElementIsNotPresent () {
         SinglyLinkedList testList = new SinglyLinkedList();
-        testList.add("Ludo");
+        testList.add("Checkers Index 0");
         testList.add("Monopoly Index 1");
         testList.add("Mancala Index 2");
         testList.add("Uno Index 3");
 
-        boolean actual = testList.contains("Ludo");
+        boolean actual = testList.contains(testList,"Ludo");
 
 
         assertFalse(actual);
@@ -128,26 +128,23 @@ class SinglyLinkedListTest {
     @Test
     void containsTestWhenElementIsPresent() {
         SinglyLinkedList testList = new SinglyLinkedList();
-        testList.add("Ludo Index 0");
+        testList.add("Ludo");
         testList.add("Monopoly Index 1");
         testList.add("Mancala Index 2");
         testList.add("Uno Index 3");
 
-        int expected = testList.size;
-        testList.remove(testList.size-1);
-        int actual = testList.size;
-
-        assertNotEquals(expected, actual);
+        boolean actual = testList.contains(testList, "Ludo");
 
 
+        assertTrue(actual);
 
 
         SinglyLinkedList.Node currentNode = testList.head;
 
-        do {currentNode = currentNode.getNext();
+        do {
+            currentNode = currentNode.getNext();
             System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
-
+        } while (currentNode.getNext() != null);
     }
 
 }
