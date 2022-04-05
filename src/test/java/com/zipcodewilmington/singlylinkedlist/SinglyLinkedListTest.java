@@ -17,10 +17,12 @@ class SinglyLinkedListTest {
     void setNextNodeTest() {
         SinglyLinkedList testList = new SinglyLinkedList();
         testList.add("Ludo");
-        testList.add("Ludo");
+        testList.add("Dumbledore");
         testList.add("Ludo");
 
         SinglyLinkedList.Node currentNode = testList.head.getNext();
+
+        assertTrue(testList.contains(testList,"Dumbledore"));
 
         printLinkedListHelper (testList.head);
 
@@ -74,14 +76,7 @@ class SinglyLinkedListTest {
 
         assertNotEquals(expected, actual);
 
-
-
-
-        SinglyLinkedList.Node currentNode = testList.head;
-
-        do {currentNode = currentNode.getNext();
-            System.out.println(currentNode.data);
-        } while(currentNode.getNext() != null);
+        printLinkedListHelper (testList.head);
 
     }
 
@@ -121,13 +116,33 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void setNextNodeTest() {
+    void findReturnsElementIndexIfFoundTest() {
         SinglyLinkedList testList = new SinglyLinkedList();
-        testList.add("Ludo");
-        testList.add("Ludo");
-        testList.add("Ludo");
+        testList.add("Peter");
+        testList.add("Piper");
+        testList.add("Pickle");
 
-        SinglyLinkedList.Node currentNode = testList.head.getNext();
+        int actual = testList.find(testList,"Piper");
+        int expected = 0;
+
+        assertEquals(actual, expected);
+
+        printLinkedListHelper (testList.head);
+
+
+    }
+
+    @Test
+    void findReturnsElementIndexIfNotFoundTest() {
+        SinglyLinkedList testList = new SinglyLinkedList();
+        testList.add("Peter");
+        testList.add("Piper");
+        testList.add("Pickle");
+
+        int actual = testList.find(testList,"Cucumber");
+        int expected = -1;
+
+        assertEquals(actual, expected);
 
         printLinkedListHelper (testList.head);
 

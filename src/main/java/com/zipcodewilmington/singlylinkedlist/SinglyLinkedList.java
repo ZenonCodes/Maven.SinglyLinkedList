@@ -35,7 +35,7 @@ public class SinglyLinkedList<T> {
         size--;
     }
 
-    public boolean contains(SinglyLinkedList searchMe, String element) {
+    public boolean contains(SinglyLinkedList searchMe, T element) {
         SinglyLinkedList.Node currentNode = searchMe.head;
         do {
             currentNode = currentNode.getNext();
@@ -44,6 +44,18 @@ public class SinglyLinkedList<T> {
         } while(currentNode.getNext() != null);
 
        return (searchMe.tail.data.equals(element));
+    }
+
+    public int find(SinglyLinkedList searchMe, T element) {
+        SinglyLinkedList.Node currentNode = searchMe.head;
+        int index = 0;
+        do {
+            currentNode = currentNode.getNext();
+            if(currentNode.data.equals(element)) return index;
+        } while(currentNode.getNext() != null);
+        if (currentNode.data.equals(element)) return (++index);
+
+        return -1;
     }
 
     public static class Node<T> {

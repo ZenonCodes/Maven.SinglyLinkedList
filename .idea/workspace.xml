@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="" />
+    <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +271,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.findReturnsElementIndexIfFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -277,14 +281,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="removeTestDoesNothingWhenIndexIsAbsent" />
+      <option name="METHOD_NAME" value="findReturnsElementIndexIfFoundTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.removeTestWhenIndexIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.findReturnsElementIndexIfNotFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -294,14 +298,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="removeTestWhenIndexIsPresent" />
+      <option name="METHOD_NAME" value="findReturnsElementIndexIfNotFoundTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.setNextNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -311,7 +315,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="removeTestWhenIndexIsPresentBound2" />
+      <option name="METHOD_NAME" value="setNextNodeTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -362,19 +366,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" />
       <item itemvalue="JUnit.SinglyLinkedListTest.containsTestWhenElementIsNotPresent" />
       <item itemvalue="JUnit.SinglyLinkedListTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfFoundTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.setNextNodeTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfNotFoundTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SinglyLinkedListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfFoundTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.findReturnsElementIndexIfNotFoundTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.setNextNodeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.containsTestWhenElementIsNotPresent" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresentBound2" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestWhenIndexIsPresent" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.removeTestDoesNothingWhenIndexIsAbsent" />
       </list>
     </recent_temporary>
   </component>
